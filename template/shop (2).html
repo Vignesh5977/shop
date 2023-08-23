@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Items</title>
+    <style>
+    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        
+        .header-logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .header-nav {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .header-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .item-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .item-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        .item-price {
+            font-size: 16px;
+        }
+        
+        .item-quantity {
+            font-size: 16px;
+        }
+        
+        .quantity-input {
+            width: 60px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-logo">Center Shop</div>
+        <div class="header-nav">
+            <a href="#">Home</a>
+            <a href=" shop.html">Shop Item</a>
+            <a href="sell.html">Sell Item</a>
+            <a href="#">Account</a>
+        </div>
+    </div>
+</div>
+    
+    <div class="container">
+        <div class="item">
+            <div class="item-name">Pen</div>
+            <div class="item-details">
+                <div class="item-price">Price: Rs.4.00</div>
+                <div class="item-quantity">Quantity: 50</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-name">Pencil</div>
+            <div class="item-details">
+                <div class="item-price">Price: Rs.3.00</div>
+                <div class="item-quantity">Quantity: 50</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-name">Eraser</div>
+            <div class="item-details">
+                <div class="item-price">Price: Rs.2.00</div>
+                <div class="item-quantity">Quantity: 50</div>
+            </div>
+        </div>
+        
+
+        
+        <div class="item">
+            <div class="item-name">Sharpener</div>
+            <div class="item-details">
+                <div class="item-price">Price: Rs.2.00</div>
+                <div class="item-quantity">Quantity: 50</div>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="item-name">Geometry Box</div>
+            <div class="item-details">
+                <div class="item-price">Price: Rs.175.00</div>
+                <div class="item-quantity">Quantity: 50</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-name">A4 Sheet</div>
+            <div class="item-details">
+                <div class="item-price">Price: Rs.0.15</div>
+                <div class="item-quantity">Quantity: 50</div>
+            </div>
+        </div>
+
+     <form action="/Shop" method="POST">
+        <h1>Item List</h1>
+        <div>
+          <label for="itemSelect">Select an item:</label>
+          <select id="itemSelect" name="itemSelect">
+            <option value="pen" name="pen" >Pen</option>
+            <option value="pencil" name="pencil" >Pencil</option>
+            <option value="eraser" name="eraser" >Eraser</option>
+            <option value="sharpener" name="sharpener">Sharpener</option>
+            <option value="geometryBox" name="geometryBox">Geometry Box</option>
+            <option value="sheet" name="sheet">A4 Sheet</option>
+          </select>
+        </div>
+        <div>
+          <label for="quantityInput">Enter quantity:</label>
+          <input type="number" id="quantityInput" name="quantity" min="1" max="50" value="1">
+        </div>
+        
+ <div>
+      <input type="submit" value="Shop">
+  </div> 
+</form>
+  
+    
+</body>
+</html>
