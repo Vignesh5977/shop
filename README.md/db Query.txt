@@ -1,0 +1,5 @@
+create table itemss(itemname varchar(20),quantity int ,rate int, amount int);
+
+create table sellitemss(itemname varchar(20),quantity int ,rate int, amount int);
+
+create table account(balance int);
